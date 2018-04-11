@@ -17,8 +17,8 @@ namespace Vidly.Controllers
 
             var customers = new List<Customer>
             {
-                new Customer { Name = "Customer 1" },
-                new Customer { Name = "Customer 2" }
+                new Customer { Name = "Customer 1", Id = 1 },
+                new Customer { Name = "Customer 2", Id = 2 }
             };
 
             var viewModel = new RandomMovieViewModel
@@ -29,6 +29,22 @@ namespace Vidly.Controllers
             
             return View(viewModel);
 
+        }
+
+        public ActionResult Index()
+        {
+            var movies = new List<Movie>
+            {
+                new Movie { Name = "Shrek!", Id = 1 },
+                new Movie { Name = "Death Space", Id = 2 }
+            };
+
+            var viewModel = new MoviesViewModel
+            {
+                Movies = movies,
+            };
+
+            return View(viewModel);
         }
     }
 }
