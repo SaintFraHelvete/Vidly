@@ -9,6 +9,7 @@
     <thead>
         <tr>
             <th scope="col">Customer Name</th>
+            <th scope="col">Discount Rate</th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +21,14 @@
         {
             foreach (var customer in Model.Customers)
             {
-                <tr><td>
+                <tr>
+                    <td>
                         @Html.ActionLink(customer.Name, "Details", "Customers", new { id = 1 }, null)
-                </td></tr>
+                    </td>
+                    <td>
+                        @customer.MembershipType.DiscountRate%
+                    </td>
+                </tr>
             }
         }
     </tbody>

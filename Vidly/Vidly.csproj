@@ -150,7 +150,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804141947570_Initial Model.cs" />
+    <Compile Include="Migrations\201804141947570_Initial Model.Designer.cs">
+      <DependentUpon>201804141947570_Initial Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804141959210_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201804141959210_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201804141959210_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804142005433_AddMembershipType.cs" />
+    <Compile Include="Migrations\201804142005433_AddMembershipType.Designer.cs">
+      <DependentUpon>201804142005433_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804142010004_PopulateMembershipTable.cs" />
+    <Compile Include="Migrations\201804142010004_PopulateMembershipTable.Designer.cs">
+      <DependentUpon>201804142010004_PopulateMembershipTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804142019029_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201804142019029_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201804142019029_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DBContext.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\CustomersViewModel.cs" />
@@ -224,7 +247,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -263,6 +288,23 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804141947570_Initial Model.resx">
+      <DependentUpon>201804141947570_Initial Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804141959210_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201804141959210_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804142005433_AddMembershipType.resx">
+      <DependentUpon>201804142005433_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804142010004_PopulateMembershipTable.resx">
+      <DependentUpon>201804142010004_PopulateMembershipTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804142019029_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201804142019029_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
