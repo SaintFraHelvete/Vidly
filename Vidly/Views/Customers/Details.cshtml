@@ -6,3 +6,12 @@
 }
 
 <h2>Customer Name: @Model.Name</h2>
+
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (@Model.Birthdate != null)
+    {
+        <li>Birthdate: @Model.Birthdate</li>
+    }
+        
+</ul>

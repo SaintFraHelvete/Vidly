@@ -20,15 +20,10 @@ namespace Vidly.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            //base.Dispose(disposing);
+            base.Dispose(disposing);
+
             _context.Dispose();
         }
-
-        //List<Customer> _customers = new List<Customer>
-        //    {
-        //        new Customer { Name = "Customer 1", Id = 1 },
-        //        new Customer { Name = "Customer 2", Id = 2 }
-        //    };
 
         // GET: Customers
         public ActionResult Index()
@@ -43,7 +38,7 @@ namespace Vidly.Controllers
 
         public ActionResult Details(int id)
         {
-            var customer = _context.Customers.SingleOrDefault<Customer>(c => c.Id == id);
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault<Customer>(c => c.Id == id);
 
             return View(customer);
         }

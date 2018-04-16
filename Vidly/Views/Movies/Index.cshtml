@@ -11,6 +11,7 @@
     <thead>
         <tr>
             <th scope="col">Movie</th>
+            <th scope="col">Genre</th>
         </tr>
     </thead>
     <tbody>
@@ -24,8 +25,10 @@
             {
                 <tr>
                     <td>
-                        @*@Html.ActionLink(movie.Name, "Details", "Customers", new { id = 1 }, null)*@
-                        @movie.Name
+                        @Html.ActionLink(movie.Name, "Details", "Movies", new { id =  movie.Id}, null)
+                    </td>
+                    <td>
+                        @movie.Genre
                     </td>
                 </tr>
             }

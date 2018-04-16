@@ -170,9 +170,41 @@
     <Compile Include="Migrations\201804142019029_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201804142019029_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804161828007_MembershipTypeNameAdded.cs" />
+    <Compile Include="Migrations\201804161828007_MembershipTypeNameAdded.Designer.cs">
+      <DependentUpon>201804161828007_MembershipTypeNameAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161834535_MembershipTypeNameAdded1.cs" />
+    <Compile Include="Migrations\201804161834535_MembershipTypeNameAdded1.Designer.cs">
+      <DependentUpon>201804161834535_MembershipTypeNameAdded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161835302_MembershipTypeNameAdded2.cs" />
+    <Compile Include="Migrations\201804161835302_MembershipTypeNameAdded2.Designer.cs">
+      <DependentUpon>201804161835302_MembershipTypeNameAdded2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161910341_MembershipTypeNamesAdded.cs" />
+    <Compile Include="Migrations\201804161910341_MembershipTypeNamesAdded.Designer.cs">
+      <DependentUpon>201804161910341_MembershipTypeNamesAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161931233_test.cs" />
+    <Compile Include="Migrations\201804161931233_test.Designer.cs">
+      <DependentUpon>201804161931233_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804162024525_CustomerBirthdateAdded.cs" />
+    <Compile Include="Migrations\201804162024525_CustomerBirthdateAdded.Designer.cs">
+      <DependentUpon>201804162024525_CustomerBirthdateAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804162029550_CustomerBirthdateAddedNullable.cs" />
+    <Compile Include="Migrations\201804162029550_CustomerBirthdateAddedNullable.Designer.cs">
+      <DependentUpon>201804162029550_CustomerBirthdateAddedNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804162047350_MovieModelAddedFields.cs" />
+    <Compile Include="Migrations\201804162047350_MovieModelAddedFields.Designer.cs">
+      <DependentUpon>201804162047350_MovieModelAddedFields.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\DBContext.cs" />
+    <Compile Include="Models\VidlyDBContext.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -270,6 +302,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -304,6 +337,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804142019029_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201804142019029_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161828007_MembershipTypeNameAdded.resx">
+      <DependentUpon>201804161828007_MembershipTypeNameAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161834535_MembershipTypeNameAdded1.resx">
+      <DependentUpon>201804161834535_MembershipTypeNameAdded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161835302_MembershipTypeNameAdded2.resx">
+      <DependentUpon>201804161835302_MembershipTypeNameAdded2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161910341_MembershipTypeNamesAdded.resx">
+      <DependentUpon>201804161910341_MembershipTypeNamesAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161931233_test.resx">
+      <DependentUpon>201804161931233_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804162024525_CustomerBirthdateAdded.resx">
+      <DependentUpon>201804162024525_CustomerBirthdateAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804162029550_CustomerBirthdateAddedNullable.resx">
+      <DependentUpon>201804162029550_CustomerBirthdateAddedNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804162047350_MovieModelAddedFields.resx">
+      <DependentUpon>201804162047350_MovieModelAddedFields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
