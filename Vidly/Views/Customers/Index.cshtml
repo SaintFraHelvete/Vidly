@@ -5,6 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+
+@Html.ActionLink("New", "New", null, htmlAttributes: new { @class = "btn btn-primary" })
+<br /><br />
 <table class="table">
     <thead>
         <tr>
@@ -23,7 +27,7 @@
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)
+                        @Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)
                     </td>
                     <td>
                         @customer.MembershipType.Name
